@@ -362,7 +362,7 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
-	
+
 #header-wrapper
 {
 	padding: 2em 0em;
@@ -468,7 +468,7 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
-	
+
 	#banner-wrapper
 {
 	overflow: hidden;
@@ -623,6 +623,7 @@ ul.contact li a.icon-rss:before
 	padding: 6em 0em;
 	background: #383838;
 	text-align: center;
+	margin:auto;
 }
 
 #featured
@@ -679,32 +680,22 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2,  .column3,  .column4
+.column1,  .column2
 {
-	width: 282px;
+	width: 500px;
 }
 
 .column1,  .column2
 {
 	float: left;
-	margin-right: 24px;
-}
-
-.column3
-{
-	float: left;
-}
-
-.column4
-{
-	float: right;
+	margin-right: 60px;
 }
 
 
 	#header-featured
 	{
 		height: 30em;
-		background-image: url(images/banner.jpg);
+		background-image: url(../images/banner.jpg);
 		background-position: center;
 		background-size: cover;
 	}

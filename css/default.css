@@ -436,13 +436,15 @@ ul.contact li a.icon-rss:before
 	float: left;
 	text-align: center;
 	line-height: 60px;
+	font-size: 18px;
+	font-family: "微軟正黑體";
 }
 
 #menu li a, #menu li span
 {
 	display: inline-block;
 	margin-left: 1px;
-	padding: 0em 1.5em;
+	padding: 0em 0.5em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	font-size: 1em;
@@ -680,13 +682,15 @@ ul.contact li a.icon-rss:before
 	color: #FFF;
 }
 
-.column1,  .column2
-{
-	width: 500px;
+.column2 a{
+	color:#FFFFBB;
+	font-size: 30px;
 }
 
 .column1,  .column2
 {
+	width: 520px;
+	color:white;
 	float: left;
 	margin-right: 60px;
 }

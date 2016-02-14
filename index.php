@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'functions.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -12,8 +13,8 @@ session_start();
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" type="text/css" href="/shadowbox/shadowbox.css"/>
-<script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
+<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
 <script type="text/javascript">
   Shadowbox.init();
 </script>
@@ -32,7 +33,7 @@ session_start();
         <li><a href="#" accesskey="2" title="">講者介紹</a></li>
         <li><a href="#" accesskey="3" title="">討論區</a></li>
         <li><a href="#" accesskey="4" title="">計畫簡介</a></li>
-        <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
+        <?php if ($_SESSION['FBID']): checkuser( $_SESSION['FBID'],$_SESSION['FULLNAME'],$_SESSION['EMAIL']);?>      <!--  After user login  -->
         <li><a href="#" accesskey="5" title=""><?php echo $_SESSION['FULLNAME']; ?></a><img src="https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture"></li>
         <li><a href="logout.php">登出</a></li>
         <?php else: ?>
@@ -52,21 +53,17 @@ session_start();
       <div class="column1">
         <!-- news-->
         <div class="title">
-          <h2>最新消息</h2>
+          <h2></h2>
         </div>
-        <p>new posts</p>
+        <p>最新消息</p>
       </div>
       <div class="column2">
-        <div>
-          <ul>
-            <li><a href='https://www.youtube.com/watch?v=IhdhyvyExEA' target="_blank" rel="shadowbox">part1_2</li>
-            <li><a href='https://www.youtube.com/watch?v=QkJkcCRT_6Y' target="_blank" >part1_3</a></li>
-          </ul>
-        </div>
+        <a href="movie/part1.php" rel="shadowbox"; width=600; height=400>FAE 工程師</a><br /><br />
+        持續新增...
         <div class="title">
-          <h2>最新上架</h2>
+          <h2></h2>
         </div>
-        <p>new movie</p>
+        <p><h2>最新上架</h2></p>
       </div>
     </div>
   </div>

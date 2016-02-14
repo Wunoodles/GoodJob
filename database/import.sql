@@ -1,3 +1,4 @@
+CREATE SCHEMA `goodjob` ;
 CREATE TABLE IF NOT EXISTS `Users` (
   `UID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `Fuid` varchar(100) NOT NULL,
